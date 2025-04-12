@@ -16,4 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
     keyPressed.addEventListener("keydown", function(event){
         displayKeyPressed.textContent = `Key pressed is: ${event.key}`;
     });
+
+    const form = document.getElementById("form");
+    const username = document.getElementById("username");
+    const status = document.getElementById("status");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        formMessage.textContent = `Submission successfull. username: ${username.value}, status: ${status.value}`;
+    });
 });
