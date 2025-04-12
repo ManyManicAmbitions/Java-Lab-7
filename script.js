@@ -8,5 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
     button.addEventListener("mouseleave", function(){
         this.style.backgroundColor = "";
         text.textContent = "Hover over button to see text."
-    })
-})
+    });
+
+    const keyPressed = document.getElementById("keyPressed");
+    const displayKeyPressed = document.getElementById("displayKeyPressed");
+
+    keyPressed.addEventListener("keydown", function(event){
+        displayKeyPressed.textContent = `Key pressed is: ${event.key}`;
+    });
+});
