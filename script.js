@@ -37,4 +37,13 @@ document.addEventListener("DOMContentLoaded", function() {
     focusInput.addEventListener("blur", function(){
         focusMessage.textContent = "focus lost";
     });
+
+    const buttonContainer = document.getElementById("buttonContainer");
+    const delegationMessage = document.getElementById("delegationMessage");
+
+    buttonContainer.addEventListener("click", function(event){
+        if (event.target.tagName === "BUTTON"){
+            delegationMessage.textContent = `you clicked: ${event.target.textContent}`;
+        }
+    });
 });
