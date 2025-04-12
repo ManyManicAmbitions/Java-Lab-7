@@ -9,23 +9,23 @@
 <body>
     <section>
         <div id="hover" style="padding: 15px; margin-top: 5px; border: 3px solid black;">
-        <h1>click the button</h1>
+        <h1>click the button (mouse events)</h1>
         <button id="clickButton">Click this</button>
         <p id="hoverText">Hover over button to see the text.</p>
         </div>
     </section>
        
     <section>
-        <h1>Press a key</h1>
-        <input id="keyPressed" type="text" placeholder="Press a key">
+        <h1>Press a key (keyboard events)</h1>
+        <input id="keyPressed" type="text">
         <p id="displayKeyPressed">In the input field press a key</p>
     </section>
 
     <section>
-        <h1>Submit form</form></h1>
+        <h1>Submit form (form events)</form></h1>
         <form id="form">
             <label for="username">username:</label>
-            <input type="text" id="username" placeholder="Enter username">
+            <input type="text" id="username">
             <label for="status">status:</label>
             <select name="status" id="status">
                 <option value="live">Live</option>
@@ -38,7 +38,9 @@
     </section>
 
     <section>
-
+        <h1>Blur events (username length)</h1>
+        <input type="text" id="focusInput">
+        <p id="focusMessage"></p>
     </section>
 
     <section>

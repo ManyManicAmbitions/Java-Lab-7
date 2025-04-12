@@ -26,4 +26,15 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         formMessage.textContent = `Submission successfull. username: ${username.value}, status: ${status.value}`;
     });
+
+    const focusInput = document.getElementById("focusInput");
+    const focusMessage = document.getElementById("focusMessage");
+
+    focusInput.addEventListener("focus", function(){
+        focusMessage.textContent = "focused";
+    });
+
+    focusInput.addEventListener("blur", function(){
+        focusMessage.textContent = "focus lost";
+    });
 });
