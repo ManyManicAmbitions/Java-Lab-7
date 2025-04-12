@@ -22,7 +22,19 @@
     </section>
 
     <section>
-        <form action=""></form>
+        <h1>Submit form</form></h1>
+        <form id="form">
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <label for="status">status:</label>
+            <select name="status" id="status">
+                <option value="live">Live</option>
+                <option value="idle">Idle</option>
+                <option value="loading">Loading</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
     </section>
 
     <section>
